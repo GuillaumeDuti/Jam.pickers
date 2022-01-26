@@ -1,5 +1,8 @@
 export class Position {
 
+    lng;
+    lat;
+
     constructor(longitude, latitude) {
         this.Lng = longitude;
         this.Lat = latitude;

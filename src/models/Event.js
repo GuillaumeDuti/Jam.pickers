@@ -1,11 +1,17 @@
 export class Event {
+
+    eventName;
+    description;
+    date;
+    address;
     #price;
-    constructor(eventName, description, date, address, keywords, price = 0, categories) {
+    categories;
+    
+    constructor(eventName, description, date, address, price = 0, categories) {
         this.eventName      = eventName;
         this.description    = description;
         this.date           = date;
         this.address        = address; 
-        this.keywords       = keywords;
         this.Price          = price; 
         this.categories     = categories;
     }
