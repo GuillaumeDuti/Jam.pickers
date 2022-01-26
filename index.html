@@ -9,6 +9,79 @@
 </head>
 <body>
     <h1>Jampickers</h1>
-    <h2>No site yet, just the console (:</h2>
+    <!-- <h2>No site yet, just the console (:</h2> -->
+    <form action="" method="GET">
+        <table>
+            <tr>
+                <td colspan="2"><h2>Principal informations</h2></td>
+            </tr>
+            <tr>
+                <td><label for="eventName">event name</label></td>
+                <td><input value="Jam Ulb" name="eventName" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="description">description</label></td>
+                <td><textarea rows="10"  name="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae porro aspernatur enim ipsam consectetur quaerat nam ut tempora architecto itaque.</textarea></td>
+            </tr>
+            <tr>
+                <td><label for="price">price</label></td>
+                <td><input value="5" min="0" max="50" name="price" type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="categories">categories</label></td>
+                <td><input value="rock" name="categories" type="text"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><h2>Location</h2></td>
+            </tr>
+            <tr>
+                <td><label for="country">country</label></td>
+                <td><input value="Belgium" name="country" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="city">city</label></td>
+                <td><input value="Liege" name="city" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="street">street</label></td>
+                <td><input value="rue du parlement" name="street" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="number">number</label></td>
+                <td><input value="17" name="number" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="postalCode">postal-code</label></td>
+                <td><input value="4020" name="postalCode" type="text"></td>
+            </tr>
+            <tr>
+                <td><label for="latitude">latitude</label></td>
+                <td><input value="55.056" step="0.000001" min="-90" max="90" name="latitude" type="number"></td>
+            </tr>
+            <tr>
+                <td><label for="longitude">longitude</label></td>
+                <td><input value="5.555" step="0.000001" min="-180" max="180" name="longitude" type="number"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><h2>Date</h2></td>
+            </tr>
+            <tr>
+                <td><label for="date">date</label></td>
+                <td><input name="date" type="date"></td>
+            </tr>
+            <tr>
+                <td><label for="timeStart">time start</label></td>
+                <td><input name="timeStart" type="time"></td>
+            </tr>
+            <tr>
+                <td><label for="timeEnd">time end</label></td>
+                <td><input name="timeEnd" type="time"></td>
+            </tr>
+        </table>
+        <input type="submit" value="send">
+        <!-- <table>
+        </table> -->
+    </form>
+
 </body>
 </html>
