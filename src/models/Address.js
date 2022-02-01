@@ -10,7 +10,7 @@ export class Address {
         this.country    = country;
         this.city       = city;
         this.street     = street;
-        this.number     = number;
-        this.postalCode = postalCode;
+        this.number     = parseInt(number);
+        this.postalCode = parseInt(postalCode);
     }
 }

@@ -12,7 +12,7 @@ export class Event {
         this.description    = description;
         this.date           = date;
         this.address        = address; 
-        this.Price          = price; 
+        this.Price          = parseInt(price); 
         this.categories     = categories;
     }
 
