@@ -1,5 +1,6 @@
 import { Address } from "./models/Address.js";
 import { Event } from "./models/Event.js";
+import { EventDirectory } from "./models/EventsDirectory.js";
 import { Location } from "./models/Location.js";
 import { Position } from "./models/Position.js";
 import { Time } from "./models/Time.js";
@@ -8,6 +9,13 @@ let form     = document.querySelector('form');
 form.addEventListener('submit', function(e) {
     setData(e);
 });
+const address = new Address("Belgium", "Brussels", "Brand Whitlock", 123, 1200);
+const position = new Position(150.002,-56.52);
+const location = new Location(address, position);
+const time = new Time();
+const jam = new Event("The Bob Jam", "lorem ipsum input ...", time, location, 0, "any");
+
+const directory = new EventDirectory(jam);
 
 function setData(e) {
     e.preventDefault();
@@ -32,16 +40,12 @@ function setData(e) {
     let location = new Location(address, position);
     let time = new Time(date, timeStart, timeEnd);
     let jam = new Event(eventName, description, time, location, price, categories);
-    
-    window.eventName = jam;
-    console.log(jam);
+    directory.addEvent(jam);
+    // window.eventName = jam;
+    // console.log(jam);
 }
 
+window.directory = directory;
 
-const address = new Address("Belgium", "Brussels", "Brand Whitlock", 123, 1200);
-const position = new Position(150.002,-56.52);
-const location = new Location(address, position);
-const time = new Time();
-const jam = new Event("The Bob Jam", "lorem ipsum input ...", time, location, 0, "any");
 
-window.jam = jam;
+// window.jam = jam;
