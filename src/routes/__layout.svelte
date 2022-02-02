@@ -2,6 +2,6 @@
     import "../app.css"
 </script>
 
-<div class="container mx-auto max-w-xl">
+<div class="bg-gray-50">
     <slot></slot>
 </div>
