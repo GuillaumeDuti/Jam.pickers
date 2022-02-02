@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/reset.css">
     <script src="./src/main.js" type="module"></script>
     <title>Jampickers</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
         html {
             font-family: Arial, Helvetica, sans-serif;
-            /* background-color: #a8a8a8; */
+            background-color: #dadada;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
         }
         h2 {
             font-size: 20px;
@@ -40,12 +42,36 @@
             padding: 5px;
             border: solid black 1px;
         }
+
+        #jams-list {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        #jams-list .jam-item {
+            padding: 10px;
+            border: black solid 1px;
+            background: white;
+        }
     </style>
 </head>
 <body>
-    <h1>Jampickers</h1>
-    <h2>(juste un formulaire pour tester la liste qui suit tqt :)</h2>
-    <form action="" method="GET">
+    <!-- <h1>Jampickers</h1> -->
+    <nav>
+        <div>
+            <img width="200" height="100" src="./assets/img/logo_bold.svg" alt="Jampickers logo">
+        </div>
+    </nav>
+    <main>
+        <ul id="jams-list">
+            <li class="jam-item">
+                <header>
+                    <h4>Nom de la Jam</h4>
+                </header>
+            </li>
+        </ul>
+    </main>
+    <!-- <form action="" method="GET">
+        <h2>(juste un formulaire pour tester la liste qui suit tqt :)</h2>
         <table>
             <tr>
                 <td colspan="2"><h2>Principal informations</h2></td>
@@ -114,9 +140,7 @@
             </tr>
         </table>
         <input type="submit" value="send">
-        <!-- <table>
-        </table> -->
-    </form>
+    </form> -->
 
 </body>
 </html>
