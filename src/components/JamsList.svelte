@@ -3,7 +3,7 @@
 
 </script>
 
-<ul class="flex flex-col gap-8 relative">
+<ul class="flex flex-col gap-8 relative bg-white">
     <JamItem/>
     <JamItem/>
     <JamItem/>

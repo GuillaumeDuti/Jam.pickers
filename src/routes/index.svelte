@@ -1,10 +1,15 @@
 <script>
+    
+    import Welcome from "../components/Welcome.svelte";
     import JamsList from "../components/JamsList.svelte";
     import Navbar from "../components/Navbar.svelte";
 </script>
 
-<div class="container mx-auto pt-[60vh] max-w-xl">
-    <Navbar/>
+<div class="container flex flex-col mx-auto max-w-xl">
+    <div class="sticky inset-0 py-20">
+        <Navbar/>
+        <Welcome/>
+    </div>
     <JamsList/>
 </div>
 <!-- 
