@@ -5,7 +5,7 @@
     import Navbar from "../components/Navbar.svelte";
 </script>
 
-<div class="container flex flex-col mx-auto max-w-xl">
+<div class="container flex flex-col mx-auto max-w-xl px-2">
     <div class="sticky inset-0 py-20">
         <Navbar/>
         <Welcome/>
