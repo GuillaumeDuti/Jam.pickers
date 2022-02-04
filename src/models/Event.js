@@ -4,7 +4,7 @@ export class Event {
     description;
     date;
     location;
-    #price;
+    price;
     categories;
     
     constructor(eventName, description, date, location, price = 0, categories) {
@@ -17,12 +17,12 @@ export class Event {
     }
 
     get Price() {
-        return this.#price;
+        return this.price;
     }
 
     set Price(value) {
         if(isNaN(value)) throw new TypeError(`${value} is not a number`);
         if(value < 0) throw new RangeError(`${value} must be a positive number`)
-        this.#price = value;
+        this.price = value;
     }
 }

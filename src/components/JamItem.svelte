@@ -1,6 +1,6 @@
 <script>
     export let data;
-    let date = new Date().toLocaleDateString('fr-FR');
+    // let date = new Date().toLocaleDateString('fr-FR');
     // let options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
     // let date = new Date().toLocaleDateString('fr-FR', options);
 </script>
@@ -12,7 +12,7 @@
             <h4 class="font-bold text-lg uppercase text-gray-800">{data.eventName}</h4>
         </div>
         <div class="jam-when">
-            <span class="text-lg">{data.date.date.toLocaleDateString()}</span>
+            <span class="text-lg">{new Date(data.date.date).toLocaleDateString()}</span>
         </div>
     </header>
     <div class="jam-what">

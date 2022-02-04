@@ -1,17 +1,13 @@
 <script>
 import { Location } from "../models/Location.js";
 import { Time } from "../models/Time.js";
-
 import { Address } from "../models/Address.js";
-
-
-import { EventsDirectory } from "../models/EventsDirectory.js";
+// import { EventsDirectory } from "../models/EventsDirectory.js";
 import { Position } from "../models/Position.js";
 import { Event } from "../models/Event.js";
 import { directoryStore } from "../stores/directoryStore.js"
 
 
-    // const directory = new EventDirectory()
     function onSubmit(e) {
         const formData = new FormData(e.target);
         
@@ -21,22 +17,35 @@ import { directoryStore } from "../stores/directoryStore.js"
         data[key] = value;
         }
         processData(data);
-        // console.log(data)
     }
     
     function processData(data) {
-        let newAdress = new Address(undefined, data.city, data.street, data.number, data.postalCode );
+        let newAdress = new Address(null, data.city, data.street, data.number, data.postalCode );
         let newPosition = new Position(0,0 );
         let newLocation = new Location(newAdress, newPosition );
         let eventDate = new Date(data.date);
-        let newTime = new Time(eventDate, eventDate.toTimeString(), eventDate.valueOf() )
-        let newEvent = new Event(data.eventName, data.description, newTime, newLocation, 0, undefined);
+        let newTime = new Time(eventDate.valueOf(), eventDate.valueOf(), eventDate.valueOf() )
+        let newEvent = new Event(data.eventName, data.description, newTime, newLocation, 0, "any");
 
-        directoryStore.update(directoryStore => {
-            directoryStore.addEvent(newEvent)
-            
-            return directoryStore
-        })
+        if($directoryStore.Events.has(newEvent.eventName)) {throw new Error(`event "${newEvent.eventName}" already setup`)}
+        else {
+            directoryStore.update(directoryStore => {
+                directoryStore.addEvent(newEvent)
+                return directoryStore
+            })
+            // const fetchJamsDirectory = async () => {
+                const url = "http://localhost:3001/directory";
+                fetch(url , {
+                    method: "post",
+                    headers: {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify(newEvent) 
+                });
+                // const data = await response.json();
+            // }
+        }
         //  $directoryStore.addEvent(newEvent);
     };
     

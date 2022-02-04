@@ -1,0 +1,194 @@
+{
+  "directory": [
+    {
+      "eventName": "Amigo Jam",
+      "description": "Intrinsicly disintermediate high-payoff action items after open-source schemas. Monotonectally implement distributed alignments with e-business applications. Competently syndicate orthogonal schemas for cross-unit quality vectors. Uniquely e-enable.",
+      "date": {
+        "date": 1645726740000,
+        "timeStart": 1645726740000,
+        "timeEnd": 1645726740000
+      },
+      "location": {
+        "address": {
+          "city": "Brussels",
+          "street": "Square Ambiorix",
+          "number": 26,
+          "postalCode": 1000
+        },
+        "position": {
+          "lng": 0,
+          "lat": 0
+        }
+      },
+      "id": 1
+    },
+    {
+      "eventName": "Amigo Jamizz",
+      "description": "Intrinsicly disintermediate high-payoff action items after open-source schemas. Monotonectally implement distributed alignments with e-business applications. Competently syndicate orthogonal schemas for cross-unit quality vectors. Uniquely e-enable.",
+      "date": {
+        "date": 1647541320000,
+        "timeStart": 1647541320000,
+        "timeEnd": 1647541320000
+      },
+      "location": {
+        "address": {
+          "city": "Brussels",
+          "street": "Square Ambiorix",
+          "number": 56,
+          "postalCode": 1000
+        },
+        "position": {
+          "lng": 0,
+          "lat": 0
+        }
+      },
+      "price": 0,
+      "id": 2
+    },
+    {
+      "eventName": "Undifined Jam",
+      "description": "Intrinsicly disintermediate high-payoff action items after open-source schemas. Monotonectally implement distributed alignments with e-business applications. Competently syndicate orthogonal schemas for cross-unit quality vectors. Uniquely e-enable.",
+      "date": {
+        "date": 1645813440000,
+        "timeStart": 1645813440000,
+        "timeEnd": 1645813440000
+      },
+      "location": {
+        "address": {
+          "city": "Brussels",
+          "street": "Square Ambiorix",
+          "number": 564,
+          "postalCode": 1000
+        },
+        "position": {
+          "lng": 0,
+          "lat": 0
+        }
+      },
+      "price": 0,
+      "id": 3
+    },
+    {
+      "eventName": "All cat Jam",
+      "description": "Intrinsicly disintermediate high-payoff action items after open-source schemas. Monotonectally implement distributed alignments with e-business applications. Competently syndicate orthogonal schemas for cross-unit quality vectors. Uniquely e-enable.",
+      "date": {
+        "date": 1645813500000,
+        "timeStart": 1645813500000,
+        "timeEnd": 1645813500000
+      },
+      "location": {
+        "address": {
+          "city": "Brussels",
+          "street": "Square Ambiorix",
+          "number": 12,
+          "postalCode": 1000
+        },
+        "position": {
+          "lng": 0,
+          "lat": 0
+        }
+      },
+      "price": 0,
+      "id": 4
+    },
+    {
+      "eventName": "Jam Ulb",
+      "description": "Intrinsicly disintermediate high-payoff action items after open-source schemas. Monotonectally implement distributed alignments with e-business applications. Competently syndicate orthogonal schemas for cross-unit quality vectors. Uniquely e-enable.",
+      "date": {
+        "date": 1646332020000,
+        "timeStart": 1646332020000,
+        "timeEnd": 1646332020000
+      },
+      "location": {
+        "address": {
+          "city": "Brussels",
+          "street": "Rue de l'Ulb",
+          "number": 1,
+          "postalCode": 1050
+        },
+        "position": {
+          "lng": 0,
+          "lat": 0
+        }
+      },
+      "price": 0,
+      "categories": "any",
+      "id": 5
+    },
+    {
+      "eventName": "Null Jam",
+      "description": "Intrinsicly disintermediate high-payoff action items after open-source schemas. Monotonectally implement distributed alignments with e-business applications. Competently syndicate orthogonal schemas for cross-unit quality vectors. Uniquely e-enable.",
+      "date": {
+        "date": 1645727460000,
+        "timeStart": 1645727460000,
+        "timeEnd": 1645727460000
+      },
+      "location": {
+        "address": {
+          "country": null,
+          "city": "Bruxelles",
+          "street": "Square Leopoldville",
+          "number": 14,
+          "postalCode": 1040
+        },
+        "position": {
+          "lng": 0,
+          "lat": 0
+        }
+      },
+      "price": 0,
+      "categories": "any",
+      "id": 6
+    },
+    {
+      "eventName": "animation",
+      "description": "le zouf",
+      "date": {
+        "date": 1645650180000,
+        "timeStart": 1645650180000,
+        "timeEnd": 1645650180000
+      },
+      "location": {
+        "address": {
+          "country": null,
+          "city": "Bruxelles",
+          "street": "Square Leopoldville",
+          "number": 45,
+          "postalCode": 1040
+        },
+        "position": {
+          "lng": 0,
+          "lat": 0
+        }
+      },
+      "price": 0,
+      "categories": "any",
+      "id": 7
+    },
+    {
+      "eventName": "animation wow",
+      "description": "le zouf",
+      "date": {
+        "date": 1645650180000,
+        "timeStart": 1645650180000,
+        "timeEnd": 1645650180000
+      },
+      "location": {
+        "address": {
+          "country": null,
+          "city": "Bruxelles",
+          "street": "Square Leopoldville",
+          "number": 45,
+          "postalCode": 1040
+        },
+        "position": {
+          "lng": 0,
+          "lat": 0
+        }
+      },
+      "price": 0,
+      "categories": "any",
+      "id": 8
+    }
+  ]
+}

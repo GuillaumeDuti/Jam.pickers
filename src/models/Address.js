@@ -6,7 +6,7 @@ export class Address {
     number;
     postalCode;
     
-    constructor(country, city, street, number, postalCode) {
+    constructor(country = undefined, city, street, number, postalCode) {
         this.country    = country;
         this.city       = city;
         this.street     = street;
