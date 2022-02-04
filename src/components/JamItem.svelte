@@ -6,7 +6,7 @@
 </script>
 
 <!-- <li class="flex flex-col gap-4 p-4 bg-white border border-dashed border-gray-400 w-full hover:border-solid hover:shadow-gray-800/20 hover:shadow-md transition duration-200 cursor-pointer font-medium"> -->
-<li class="flex flex-col gap-4 p-4 bg-white border border-dashed border-gray-400 w-full cursor-pointer font-medium">
+<li class="flex flex-col gap-4 p-4 bg-white border border-dashed border-gray-400 w-full cursor-default font-medium">
     <header class="flex justify-between">
         <div class="jam-who">
             <h4 class="font-bold text-lg uppercase text-gray-800">Nom de la Jam</h4>

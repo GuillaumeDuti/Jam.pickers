@@ -4,8 +4,8 @@ export class Location {
     position;
 
     constructor(address, position) {
-        this.address    = parseInt(address);
-        this.position   = parseInt(position);
+        this.address    = address;
+        this.position   = position;
     }
 
     get Address() {
