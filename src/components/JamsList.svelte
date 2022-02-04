@@ -12,8 +12,7 @@
 
 <ul class="flex flex-col gap-6 relative bg-gray-50 pb-8">
     {#each [...jamList] as [key, value]}
-        {value.eventName}-
-        <JamItem/>
+        <JamItem data={value}/>
     {/each}
     <!-- {jamList.get('The Bob Jam')} -->
     <!-- <JamItem/>

@@ -3,15 +3,15 @@ export class Event {
     eventName;
     description;
     date;
-    address;
+    location;
     #price;
     categories;
     
-    constructor(eventName, description, date, address, price = 0, categories) {
+    constructor(eventName, description, date, location, price = 0, categories) {
         this.eventName      = eventName;
         this.description    = description;
         this.date           = date;
-        this.address        = address; 
+        this.location       = location; 
         this.Price          = parseInt(price); 
         this.categories     = categories;
     }

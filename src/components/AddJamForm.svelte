@@ -29,11 +29,12 @@ import { directoryStore } from "../stores/directoryStore.js"
         let newPosition = new Position(0,0 );
         let newLocation = new Location(newAdress, newPosition );
         let eventDate = new Date(data.date);
-        let newTime = new Time(eventDate.toDateString(), eventDate.toTimeString(), eventDate.valueOf() )
+        let newTime = new Time(eventDate, eventDate.toTimeString(), eventDate.valueOf() )
         let newEvent = new Event(data.eventName, data.description, newTime, newLocation, 0, undefined);
 
         directoryStore.update(directoryStore => {
             directoryStore.addEvent(newEvent)
+            
             return directoryStore
         })
         //  $directoryStore.addEvent(newEvent);
