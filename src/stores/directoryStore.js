@@ -17,7 +17,6 @@ const fetchJamsDirectory = async () => {
         changeToEventObject(jam)
     }
 }
-
 fetchJamsDirectory();
 
 // const eventObjectList = [];
@@ -32,3 +31,16 @@ function changeToEventObject(jam) {
         return directoryStore
     })
 }
+
+// generation 3 event sans json-server 
+    const address = new Address(undefined, "Brussels", "Square Ambiorix", "22", "1000");
+    const position = new Position(null,null);
+    const location = new Location(address, position);
+    const time = new Time(new Date(1645787460000), new Date(1645787460000), new Date(1645787460000));
+    const newJam = new Event("L'ambiorix Jam", "Continually strategize best-of-breed ideas through premium catalysts for change. Proactively utilize next-generation information after premium potentialities.", time, location, 0, "All categories");
+    const newJam2 = new Event("Folklore Stage", "Proactively utilize next-generation information after premium potentialities. Phosfluorescently morph orthogonal infrastructures after empowered customer service. Dramatically.", time, location, 0, "All categories");
+    directoryStore.update(directoryStore => {
+        directoryStore.addEvent(newJam);
+        directoryStore.addEvent(newJam2);
+        return directoryStore
+    })
