@@ -12,14 +12,14 @@
         <Navbar/>
         <SearchBar onChange={newValue => city = newValue} />
     </div>
-    {#if !city}
-        <div>
+    <!-- {#if city} -->
+        <!-- <div>
             <Welcome/>
         </div>
-    {:else}
+    {:else} -->
         <div>
             <JamsList city="{city}" />
         </div>
-    {/if}
+    <!-- {/if} -->
 </div>
 

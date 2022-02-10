@@ -11,7 +11,7 @@ export const directoryStore = writable(new EventsDirectory())
 // Fetch data already on the server
 // onMount(async () => {
     const fetchJamsDirectory = async () => {
-        const url = "http://localhost:3005/directory";
+        const url = "https://glacial-stream-03390.herokuapp.com/directory";
         const response = await fetch(url);
         const data = await response.json();
         // dataJson.push(data);
