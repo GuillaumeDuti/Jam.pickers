@@ -25,5 +25,8 @@
     "tailwindcss": "^3.0.18"
   },
   "type": "module",
-  "dependencies": {}
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "svelte-awesome": "^2.4.4"
+  }
 }

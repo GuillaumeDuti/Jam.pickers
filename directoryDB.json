@@ -32,7 +32,7 @@
       },
       "location": {
         "address": {
-          "city": "Brussels",
+          "city": "Anvers",
           "street": "Square Ambiorix",
           "number": 56,
           "postalCode": 1000
@@ -55,7 +55,7 @@
       },
       "location": {
         "address": {
-          "city": "Brussels",
+          "city": "Paris",
           "street": "Square Ambiorix",
           "number": 564,
           "postalCode": 1000
@@ -78,7 +78,7 @@
       },
       "location": {
         "address": {
-          "city": "Brussels",
+          "city": "Liege",
           "street": "Square Ambiorix",
           "number": 12,
           "postalCode": 1000
@@ -116,20 +116,20 @@
       "id": 5
     },
     {
-      "eventName": "Null Jam",
+      "eventName": "Amigo Jamizzo",
       "description": "Intrinsicly disintermediate high-payoff action items after open-source schemas. Monotonectally implement distributed alignments with e-business applications. Competently syndicate orthogonal schemas for cross-unit quality vectors. Uniquely e-enable.",
       "date": {
-        "date": 1645727460000,
-        "timeStart": 1645727460000,
-        "timeEnd": 1645727460000
+        "date": 1645609080000,
+        "timeStart": 1645609080000,
+        "timeEnd": 1645609080000
       },
       "location": {
         "address": {
           "country": null,
-          "city": "Bruxelles",
-          "street": "Square Leopoldville",
-          "number": 14,
-          "postalCode": 1040
+          "city": "Brussels",
+          "street": "Square Ambiorix",
+          "number": 12,
+          "postalCode": 1000
         },
         "position": {
           "lng": 0,
@@ -139,56 +139,6 @@
       "price": 0,
       "categories": "any",
       "id": 6
-    },
-    {
-      "eventName": "animation",
-      "description": "le zouf",
-      "date": {
-        "date": 1645650180000,
-        "timeStart": 1645650180000,
-        "timeEnd": 1645650180000
-      },
-      "location": {
-        "address": {
-          "country": null,
-          "city": "Bruxelles",
-          "street": "Square Leopoldville",
-          "number": 45,
-          "postalCode": 1040
-        },
-        "position": {
-          "lng": 0,
-          "lat": 0
-        }
-      },
-      "price": 0,
-      "categories": "any",
-      "id": 7
-    },
-    {
-      "eventName": "animation wow",
-      "description": "le zouf",
-      "date": {
-        "date": 1645650180000,
-        "timeStart": 1645650180000,
-        "timeEnd": 1645650180000
-      },
-      "location": {
-        "address": {
-          "country": null,
-          "city": "Bruxelles",
-          "street": "Square Leopoldville",
-          "number": 45,
-          "postalCode": 1040
-        },
-        "position": {
-          "lng": 0,
-          "lat": 0
-        }
-      },
-      "price": 0,
-      "categories": "any",
-      "id": 8
     }
   ]
 }
