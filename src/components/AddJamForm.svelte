@@ -60,36 +60,36 @@ import { fly } from "svelte/transition";
                 <header class="flex justify-between gap-4 flex-wrap">
                         <div class="flex flex-col gap-1  flex-1">
                             <label class="text-gray-800" for="eventName">Name of your Jam</label>
-                            <input required class="text-gray-800 placeholder:font-normal font-bold text-lg uppercase border border-dashed border-gray-600 px-1 flex-1" placeholder="The Jampickers Event"  name="eventName" type="text">
+                            <input required class="text-gray-800 placeholder:font-normal font-bold text-lg border border-dashed border-gray-600 px-1 flex-1 valid:border-solid valid:border-pink-400" placeholder="The Jampickers Event"  name="eventName" type="text">
                         </div>
                         <div class="flex flex-col gap-1">
                             <label class="text-gray-800" for="date">Date</label>
-                            <input required class="text-gray-800 placeholder:font-normal font-medium border border-dashed text-lg border-gray-600 h-full px-1 uppercase flex-1 min-w-fit" placeholder="02-05-2022T13:00" name="date" type="datetime-local">
+                            <input required class="text-gray-800 placeholder:font-normal font-medium border border-dashed text-lg border-gray-600 h-full px-1 uppercase flex-1 min-w-fit valid:border-solid valid:border-pink-400" placeholder="02-05-2022T13:00" name="date" type="datetime-local">
                         </div>
                     </header>
                     <div>
                     <div class="flex flex-col gap-1 flex-1">
                         <label class="text-gray-800" for="description">Description</label>
-                        <textarea required class=" border border-dashed text-gray-600 border-gray-600 px-1 w-full resize-x-none" rows="5" placeholder="The description here..."  name="description"></textarea>
+                        <textarea required class=" border border-dashed text-gray-600 border-gray-600 px-1 w-full resize-x-none valid:border-solid valid:border-pink-400" rows="5" placeholder="The description here..."  name="description"></textarea>
                     </div>
                 </div>
                 
                 <div class="flex justify-between gap-4 flex-wrap">
                     <div class="flex flex-col gap-1 flex-1">
                         <label class="text-gray-800" for="street">Street</label>
-                        <input required class="text-gray-800 placeholder:font-normal font-medium border border-dashed border-gray-600 h-full p-1 flex-1" placeholder="Rue de la Jam" name="street" type="text">
+                        <input required class="text-gray-800 placeholder:font-normal font-medium border border-dashed border-gray-600 h-full p-1 flex-1 valid:border-solid valid:border-pink-400" placeholder="Rue de la Jam" name="street" type="text">
                     </div>
                     <div class="flex flex-col gap-1 flex-1">
                         <label class="text-gray-800" for="number">Number</label>
-                        <input required class="text-gray-800 placeholder:font-normal font-medium border border-dashed border-gray-600 h-full p-1 flex-1" placeholder="42" name="number" type="number" min="0">
+                        <input required class="text-gray-800 placeholder:font-normal font-medium border border-dashed border-gray-600 h-full p-1 flex-1 valid:border-solid valid:border-pink-400" placeholder="42" name="number" type="number" min="0">
                     </div>
                     <div class="flex flex-col gap-1 flex-1">
                         <label class="text-gray-800" for="city">City</label>
-                        <input required class="text-gray-800 placeholder:font-normal font-medium border border-dashed border-gray-600 h-full p-1 flex-1" placeholder="Brussels" name="city" type="text">
+                        <input required class="text-gray-800 placeholder:font-normal font-medium border border-dashed border-gray-600 h-full p-1 flex-1 valid:border-solid valid:border-pink-400" placeholder="Brussels" name="city" type="text">
                     </div>
                     <div class="flex flex-col gap-1 flex-1">
                         <label class="text-gray-800" for="postalCode">Postal code</label>
-                        <input required class="text-gray-800 placeholder:font-normal font-medium border border-dashed border-gray-600 h-full p-1 flex-1" placeholder="1000" name="postalCode" type="number" min="0">
+                        <input required class="text-gray-800 placeholder:font-normal font-medium border border-dashed border-gray-600 h-full p-1 flex-1 valid:border-solid valid:border-pink-400" placeholder="1000" name="postalCode" type="number" min="0">
                     </div>
                 </div>
                 
