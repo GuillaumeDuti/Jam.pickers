@@ -1,8 +1,5 @@
 <script>
-import { onMount } from "svelte";
-
 import { directoryStore } from "../stores/directoryStore";
-import AddJamForm from "./addJamForm.svelte";
 
 
     function onSubmit(e) {
