@@ -67,7 +67,7 @@ import AddJamForm from "./addJamForm.svelte";
 
 <form class="flex justify-center" method="GET" on:submit|preventDefault={onSubmit}>
 
-    <select class="border border-gray-600 p-2 hover:border-black checked:border-black outline-none" name="city" id="cities__select">
+    <select class="border border-gray-600 rounded-l-md p-2 hover:border-black checked:border-black outline-none" name="city" id="cities__select">
         <option class="text-gray-500">Pick our city</option>
         <option disabled value="">-------------</option>
         <!-- <optgroup label="Cities"> -->
@@ -83,6 +83,6 @@ import AddJamForm from "./addJamForm.svelte";
             <label for="city">{city}</label>
         </div>
     {/each} -->
-    <button class="border border-gray-600 py-1 px-3 bg-gray-200 hover:border-black">search</button>
+    <button class="border border-gray-600 rounded-r-md py-1 px-3 bg-gray-200 hover:border-black">search</button>
     <!-- <button class="border border-gray-600 py-1 px-3 bg-gray-200 hover:border-black" on:click={toggle}>search</button> -->
 </form>

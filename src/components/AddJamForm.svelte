@@ -57,41 +57,62 @@ import { directoryStore } from "../stores/directoryStore.js"
 <li class="p-4 bg-white border border-gray-600 w-full font-medium rounded-md">
     <form class="flex flex-col gap-4 " on:submit|preventDefault={onSubmit} method="GET">
                 <header class="flex justify-between gap-4 flex-wrap">
-                        <input required class=" placeholder:font-normal font-bold text-lg uppercase text-gray-800 border border-dashed border-gray-400 px-1 flex-1" placeholder="Jam name"  name="eventName" type="text">
-                        <input required class=" placeholder:font-normal font-medium border border-dashed text-lg border-gray-400 h-full px-1 uppercase flex-1 min-w-fit" name="date" type="datetime-local">
-                </header>
-                <div>
-                    <textarea required class=" border border-dashed text-gray-600 border-gray-400 px-1 w-full resize-x-none" rows="5" placeholder="The description here..."  name="description"></textarea>
+                        <div class="flex flex-col gap-1  flex-1">
+                            <label class="text-gray-800" for="eventName">Name of your Jam</label>
+                            <input required class="text-gray-800 placeholder:font-normal font-bold text-lg uppercase border border-dashed border-gray-600 px-1 flex-1" placeholder="The Jampickers Event"  name="eventName" type="text">
+                        </div>
+                        <div class="flex flex-col gap-1">
+                            <label class="text-gray-800" for="date">Date</label>
+                            <input required class="text-gray-800 placeholder:font-normal font-medium border border-dashed text-lg border-gray-600 h-full px-1 uppercase flex-1 min-w-fit" placeholder="02-05-2022T13:00" name="date" type="datetime-local">
+                        </div>
+                    </header>
+                    <div>
+                    <div class="flex flex-col gap-1 flex-1">
+                        <label class="text-gray-800" for="description">Description</label>
+                        <textarea required class=" border border-dashed text-gray-600 border-gray-600 px-1 w-full resize-x-none" rows="5" placeholder="The description here..."  name="description"></textarea>
+                    </div>
                 </div>
-               
+                
                 <div class="flex justify-between gap-4 flex-wrap">
-                    <input required class=" placeholder:font-normal font-medium border border-dashed border-gray-400 h-full p-1 flex-1" placeholder="Street" name="street" type="text">
-                    <input required class=" placeholder:font-normal font-medium border border-dashed border-gray-400 h-full p-1 flex-1" placeholder="Number" name="number" type="number" min="0">
-                    <input required class=" placeholder:font-normal font-medium border border-dashed border-gray-400 h-full p-1 flex-1" placeholder="City" name="city" type="text">
-                    <input required class=" placeholder:font-normal font-medium border border-dashed border-gray-400 h-full p-1 flex-1" placeholder="Postal Code" name="postalCode" type="number" min="0">
+                    <div class="flex flex-col gap-1 flex-1">
+                        <label class="text-gray-800" for="street">Street</label>
+                        <input required class="text-gray-800 placeholder:font-normal font-medium border border-dashed border-gray-600 h-full p-1 flex-1" placeholder="Rue de la Jam" name="street" type="text">
+                    </div>
+                    <div class="flex flex-col gap-1 flex-1">
+                        <label class="text-gray-800" for="number">Number</label>
+                        <input required class="text-gray-800 placeholder:font-normal font-medium border border-dashed border-gray-600 h-full p-1 flex-1" placeholder="42" name="number" type="number" min="0">
+                    </div>
+                    <div class="flex flex-col gap-1 flex-1">
+                        <label class="text-gray-800" for="city">City</label>
+                        <input required class="text-gray-800 placeholder:font-normal font-medium border border-dashed border-gray-600 h-full p-1 flex-1" placeholder="Brussels" name="city" type="text">
+                    </div>
+                    <div class="flex flex-col gap-1 flex-1">
+                        <label class="text-gray-800" for="postalCode">Postal code</label>
+                        <input required class="text-gray-800 placeholder:font-normal font-medium border border-dashed border-gray-600 h-full p-1 flex-1" placeholder="1000" name="postalCode" type="number" min="0">
+                    </div>
                 </div>
                 
                 <!-- <div>
-                    <label for="latitude">latitude</label>
+                    <label class="text-gray-800" for="latitude">latitude</label>
                     <input required value="55.056" step="0.000001" min="-90" max="90" name="latitude" type="number">
                 </div>
                 <div>
-                    <label for="longitude">longitude</label>
+                    <label class="text-gray-800" for="longitude">longitude</label>
                     <input required value="5.555" step="0.000001" min="-180" max="180" name="longitude" type="number">
                 </div>
                 
                     <h2>Date</h2>
                 
                 <div>
-                    <label for="date">date</label>
+                    <label class="text-gray-800" for="date">date</label>
                     <input required name="date" type="date">
                 </div>
                 <div>
-                    <label for="timeStart">time start</label>
+                    <label class="text-gray-800" for="timeStart">time start</label>
                     <input required name="timeStart" type="time">
                 </div>
                 <div>
-                    <label for="timeEnd">time end</label>
+                    <label class="text-gray-800" for="timeEnd">time end</label>
                     <input required name="timeEnd" type="time">
                 </div> -->
             <div class="flex gap-4">

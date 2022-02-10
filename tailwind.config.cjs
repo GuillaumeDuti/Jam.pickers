@@ -1,5 +1,5 @@
 module.exports = {
-  content: ['./src/**/*.svelte', './src/**/*.css'],
+  content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
     // fontFamily: {
     //   'marker': ["'Permanent Marker'", "cursive"],
