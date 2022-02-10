@@ -8,7 +8,7 @@
 </script>
 
 <div class="container flex flex-col mx-auto max-w-4xl px-2 min-h-screen font-mono">
-    <div class="pb-10 mt-40 bg-gray-50 z-10">
+    <div class="pb-10 mt-[25vh] bg-gray-50 z-10">
         <Navbar/>
         <SearchBar onChange={newValue => city = newValue} />
     </div>

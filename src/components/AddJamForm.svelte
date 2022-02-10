@@ -54,9 +54,9 @@ import { fly } from "svelte/transition";
 </script>
 
 
-<h2 in:fly={{ y: 200, duration: 100 }} class="mt-10 font-bold text-xl text-center" >- Add a jam -</h2>
-<li in:fly={{ y: 200, duration: 100 }} class="p-4 bg-white border border-gray-600 w-full font-medium rounded-md">
-    <form class="flex flex-col gap-4 " on:submit|preventDefault={onSubmit} method="GET">
+<li class="flex flex-col gap-4" in:fly={{ y: 200, duration: 100 }} >
+    <h2 class="mt-10 font-bold text-xl text-center" >- Add a jam -</h2>
+    <form class="flex flex-col gap-4 p-4 bg-white border border-gray-600 w-full font-medium rounded-md" on:submit|preventDefault={onSubmit} method="GET">
                 <header class="flex justify-between gap-4 flex-wrap">
                         <div class="flex flex-col gap-1  flex-1">
                             <label class="text-gray-800" for="eventName">Name of your Jam</label>
