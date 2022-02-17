@@ -117,7 +117,7 @@ import { fly } from "svelte/transition";
                     <input required name="timeEnd" type="time">
                 </div> -->
             <div class="flex gap-4">
-                <input class="border bg-gray-800 text-gray-200 hover:bg-gray-600 cursor-pointer w-fit px-12 py-1" required type="submit" value="send">
+                <input class="border bg-gray-200 text-gray-800 hover:bg-teal-300 invert  cursor-pointer w-fit px-12 py-1" required type="submit" value="send">
                 <input class="border bg-gray-200 text-gray-800 hover:bg-gray-600 cursor-pointer w-fit px-12 py-1" required type="reset" value="reset">
             </div>
         </form>

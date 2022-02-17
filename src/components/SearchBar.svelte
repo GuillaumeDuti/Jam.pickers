@@ -48,7 +48,8 @@ import { onMount } from "svelte";
         <option disabled value="">-------------</option>
         {#each cities as city}
             <option value="{city}">{city}</option>
-        {/each}
+            {/each}
+        <option value="Brussels">Brussels</option>
     </select>
     <!-- <label for="cities">Pick your city</label> -->
     <!-- {#each cities as city}

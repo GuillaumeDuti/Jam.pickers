@@ -10,7 +10,7 @@
     }
 </script>
 
-<li on:click="{toggle}" in:fly={{ y: 200, duration: 100 }} class="flex flex-wrap gap-4 p-4 basis-1/2 bg-white border border-gray-600 w-full rounded-md cursor-pointer font-normal">
+<li on:click="{toggle}" in:fly={{ y: 200, duration: 100 }} class="flex flex-wrap gap-4 p-4 basis-1/2 bg-gray-200 border border-gray-600 w-full rounded-md cursor-pointer font-normal">
     <div class="flex gap-10 w-full align-baseline">
         <div class="jam-when">
             <span class="text">{new Date(data.date.date).toLocaleDateString()}</span>
